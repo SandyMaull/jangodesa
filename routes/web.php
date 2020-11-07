@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/','HomeController@index')->name('Home');
 
-Auth::routes();
+Auth::routes([
+    'register'=>false,
+    'reset' => false
+    ]);
 
 Route::get('/administrator', 'AdminController@index')->name('HomeAdmin');
 Route::get('/administrator/edit', 'AdminController@editindex');
