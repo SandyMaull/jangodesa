@@ -46,7 +46,7 @@
           <a class="nav-link" href="#">Donasi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontak</a>
+          <a class="nav-link" href="#Connect">Kontak</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/login') }}">Login</a>

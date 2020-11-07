@@ -10,6 +10,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/logo-bg.png') }}" sizes="16x16">
 
 
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="{{ asset('admin/additional.css') }}">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- overlayScrollbars -->

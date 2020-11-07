@@ -1,4 +1,6 @@
 <?php
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,6 @@ Auth::routes();
 Route::get('/administrator', 'AdminController@index')->name('HomeAdmin');
 Route::get('/administrator/edit', 'AdminController@editindex');
 Route::get('/administrator/edit/{page}', 'AdminController@editpage')->name('HomeEdit');
-Route::post('/administrator/edit/{page}', 'AdminController@posteditpage');
+Route::post('/administrator/editfile/{page}', 'AdminController@posteditpage');
 Route::post('/administrator/tambah/{page}', 'AdminController@posttambahpage');
 Route::post('/administrator/delete/{page}', 'AdminController@postdeletepage');
