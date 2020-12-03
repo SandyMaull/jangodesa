@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use Mews\Purifier\Purifier;
 use Intervention\Image\Facades\Image;
 use App\Berita;
 use Illuminate\Support\Facades\File;
