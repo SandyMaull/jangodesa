@@ -17,6 +17,7 @@ class CreateActivitiesTable extends Migration
             $table->bigIncrements('id');
             $table->string('hal');
             $table->string('activity');
+            $table->string('bagian')->nullable();
             $table->text('debug')->nullable();
             $table->timestamps();
         });

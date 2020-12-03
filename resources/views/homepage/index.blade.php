@@ -197,13 +197,6 @@
 				@foreach ($kontak as $kntk)
 					<a href="{{ $kntk->url }}"><i class="{{$kntk->class}}"></i></a>
 				@endforeach
-				{{-- @for ($i = 0; $i < $jumlah_kontak; $i++)
-				{{$ujang = 0}}
-				<a href="{{ $kontak[$kntk_key[$keys]] }}"><i class="fab fa-facebook"></i></a>
-				<a href="{{ $kontak->phone }}"><i class="fab fa-google-plus-g"></i></a>
-				<a href="{{ $kontak->ig }}"><i class="fab fa-instagram"></i></a>
-				<a href="{{ $kontak->fb }}"><i class="fab fa-youtube"></i></a>
-				<a href="{{ $kontak->gmaps }}"><i class="fab fa-youtube"></i></a> --}}
 				@php
 					$keys += 1;
 				@endphp

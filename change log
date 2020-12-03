@@ -1,0 +1,25 @@
+JANGO DESA WEBSITE USING LARAVEL 6.X
+
+Verison 0.0.1 Alpha
+    - Initiating Environment
+    - Homepage Template
+    - Admin Template
+    - Login System
+
+Version 0.0.2 Alpha
+    - Fixing Bug
+    - New Module (Home)
+    - Add new Features (Tracking Activities - Login/Logout & Operation Successful Only)
+
+Version 0.0.3 Alpha
+    - Roles Login
+    - Multiple Users Login
+    - New Module (Publikasi - Berita)
+    - Authoritative Module (Only "Admin" can access all module)
+
+
+
+
+
+
+#Kuronekosan ~

@@ -6,7 +6,7 @@
 	<title>Jango Desa</title>
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/logo-bg.png') }}" sizes="16x16">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/logo-bg.ico') }}" sizes="16x16">
 </head>
 <body>
 

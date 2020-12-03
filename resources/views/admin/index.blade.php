@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('title')
-    JangoDesa - Dashboard
+    Jango Desa - Dashboard
 @endsection
 
 @section('breadcrumb')

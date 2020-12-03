@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Struktur_Organisasi;
 use App\Slide;
 use App\Video;
+use App\Berita;
 
 class HomeController extends Controller
 {
@@ -38,5 +39,22 @@ class HomeController extends Controller
         $string = substr($string,strpos($string, 'https'), strpos($string, '"'));
         return view('homepage.index',['kontak' => $kontak,'header_judul' => $header_judul,'strk2' => $strk2,'strk' => $struktur,'sejarah' => $sejarah,'slide' => $slide,'home' => $home,'visi_misi' => $visi_misi,'video' => $video, 'string' => $string]);
         // dd($kontak);
+    }
+
+    public function publikasi()
+    {
+        return view('homepage.publikasi.index');
+    }
+
+    public function berita()
+    {
+        $berita = Berita::where('published', 1)->get();
+        return view('homepage.publikasi.berita',['berita' => $berita]);
+    }
+
+    public function beritadetails($id)
+    {
+        $berita = Berita::where('id', $id)->first();
+        return view('homepage.publikasi.beritadetails',['berita' => $berita]);
     }
 }

@@ -7,9 +7,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>@yield('title')</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/logo-bg.png') }}" sizes="16x16">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/logo-bg.ico') }}" sizes="16x16">
 
-
+    @yield('head')
     <!-- Additional CSS -->
     <link rel="stylesheet" href="{{ asset('admin/additional.css') }}">
     <!-- Font Awesome Icons -->

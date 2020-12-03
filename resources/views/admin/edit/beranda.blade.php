@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('title')
-    JangoDesa - Beranda Edit
+    Jango Desa - Beranda Edit
 @endsection
 
 @section('breadcrumb')
@@ -14,7 +14,7 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item">Tampilan</li>
+                <li class="breadcrumb-item">Home</li>
                 <li class="breadcrumb-item active">Beranda</li>
                 </ol>
             </div><!-- /.col -->
@@ -31,7 +31,7 @@
             <div class="card-header">
                 <h3 class="card-title">Judul Slider Images</h3>
                 <div class="card-tools">
-                    <button id="slider_button" style="display:none;" type="submit" class="btn btn-tool btn-primary">Submit</button>
+                    <button id="slider_button" style="display:none;" type="submit" class="btn btn-tool btn-primary">Simpan</button>
                 </div>
             </div>
             <div class="card-body">
@@ -341,8 +341,6 @@
                             </div>
                         </div>
                     </div>
-                        {{-- <input type="file" name="img[]" class="custom-file-input" id="sliderimagesupload" accept="image/png, image/jpeg, images/jpg" multiple>
-                        <label class="custom-file-label" id="sliderimageuploadlabel" for="sliderimagesupload">Choose file</label> --}}
                     <input type="hidden" id="pengurusID" name="id_image">
                     <input type="hidden" name="bagian" value="pengurus">
                 </div>
@@ -356,6 +354,7 @@
             <!-- /.modal-dialog -->
         </div>
     </form>
+
 @endsection
 
 @section('script')
@@ -562,23 +561,23 @@
 
     //FUNGSI EDIT PENGURUS
         $('#Pengurus_Edit').on('show.bs.modal', function(event) {
-                var button = $(event.relatedTarget)
-                var id = button.data('idimage')
-                var src = button.data('src')
-                var nama = button.data('nama')
-                var modal = $(this)
-                modal.find('.modal-title').text('Edit Struktur Kepengurusan');
-                document.getElementById("pengurusSRCEdit").src = src;
-                modal.find('.modal-body #pengurusID').val(id);
-                modal.find('.modal-body #pengurusnameedit').val(nama);
-                $('#pengurusimageedit').change(function(e){
-                    if($('#pengurusimageedit')[0].files){
-                        var numFiles = $('#pengurusimageedit')[0].files
-                        var strings = numFiles[0].name;
-                        var res = strings.slice(0, 40)+" ...";
-                        document.getElementById('pengurusimageeditlabel').innerText = res;
-                    }
-                });
-            })
+            var button = $(event.relatedTarget)
+            var id = button.data('idimage')
+            var src = button.data('src')
+            var nama = button.data('nama')
+            var modal = $(this)
+            modal.find('.modal-title').text('Edit Struktur Kepengurusan');
+            document.getElementById("pengurusSRCEdit").src = src;
+            modal.find('.modal-body #pengurusID').val(id);
+            modal.find('.modal-body #pengurusnameedit').val(nama);
+            $('#pengurusimageedit').change(function(e){
+                if($('#pengurusimageedit')[0].files){
+                    var numFiles = $('#pengurusimageedit')[0].files
+                    var strings = numFiles[0].name;
+                    var res = strings.slice(0, 40)+" ...";
+                    document.getElementById('pengurusimageeditlabel').innerText = res;
+                }
+            });
+        })
     </script>
 @endsection
